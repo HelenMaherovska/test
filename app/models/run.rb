@@ -1,4 +1,5 @@
 class Run < ApplicationRecord
+ has_many :tickets
  validates :place, presence: true,
                    numericality: { greater_than: 0 ,
                                    message: "only positive values!"
