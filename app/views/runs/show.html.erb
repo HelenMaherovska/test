@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @run.place %>
+</p>
+
+<p>
+  <strong>Place of departure:</strong>
+  <%= @run.place_of_departure %>
+</p>
+
+<p>
+  <strong>Date of departure:</strong>
+  <%= @run.date_of_departure %>
+</p>
+
+<p>
+  <strong>Place of arrival:</strong>
+  <%= @run.place_of_arrival %>
+</p>
+
+<p>
+  <strong>Time of arrival:</strong>
+  <%= @run.time_of_arrival %>
+</p>
+
+<%= link_to 'Edit', edit_run_path(@run) %> |
+<%= link_to 'Back', runs_path %>

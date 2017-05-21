@@ -1,0 +1,42 @@
+<%= form_with(model: run, local: true) do |form| %>
+  <% if run.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(run.errors.count, "error") %> prohibited this run from being saved:</h2>
+
+      <ul>
+      <% run.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :place %>
+    <%= form.number_field :place, id: :run_place %>
+  </div>
+
+  <div class="field">
+    <%= form.label :place_of_departure %>
+    <%= form.text_field :place_of_departure, id: :run_place_of_departure %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_of_departure %>
+    <%= form.datetime_select :date_of_departure, id: :run_date_of_departure %>
+  </div>
+
+  <div class="field">
+    <%= form.label :place_of_arrival %>
+    <%= form.text_field :place_of_arrival, id: :run_place_of_arrival %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time_of_arrival %>
+    <%= form.time_select :time_of_arrival, id: :run_time_of_arrival %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

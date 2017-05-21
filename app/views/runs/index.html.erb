@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Runs</h1>
+
+<table>
+  <thead>
+    <tr>
+     <th>Place</th>
+      <th>Place of departure</th>
+      <th>Date of departure</th>
+      <th>Place of arrival</th>
+      <th>Time of arrival</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @runs.each do |run| %>
+      <tr>
+        <td><%= run.place %></td>
+        <td><%= run.place_of_departure %></td>
+        <td><%= run.date_of_departure %></td>
+        <td><%= run.place_of_arrival %></td>
+        <td><%= run.time_of_arrival %></td>
+        <td class="options">
+         <button class="btn btn-info"><%= link_to 'Show', run %></button>
+        </td>
+        <td class="options">
+          <button class="btn btn-info"><%= link_to 'Edit', edit_run_path(run) %></button>
+        </td>
+        <td class="options">
+        <button class="btn btn-info">
+        <%= link_to 'Destroy', run, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </button>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<button class="btn btn-info">
+  <%= link_to 'New Run', new_run_path %>
+</button>
