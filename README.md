@@ -5,14 +5,14 @@
 
 **What it uses?**
 
--Ruby on Rails
--Bootstrap
--Devise
--Devise Bootstrap Views
--Rspec
--Factory girl
--Rails admin
--Faker
+>-Ruby on Rails
+>-Bootstrap
+>-Devise
+>-Devise Bootstrap Views
+>-Rspec
+>-Factory girl
+>-Rails admin
+>-Faker
 
 
 
@@ -26,20 +26,20 @@ You have to clone this repo and run bundle install to resolve dependencies using
 
 **To sign in you can use my test data (or sign up) :**
 
--email : olenka@gmail.com
--password : olenka
+>-email : olenka@gmail.com
+>-password : olenka
 
 
 
 
 **I also created fake data,so you have to run :**
 
--rake db:migrate
--rake db:seed
+>-rake db:migrate
+>-rake db:seed
 
 
 
 
 **And finally :**
 
--rails s
+>-rails s
