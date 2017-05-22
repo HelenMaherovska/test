@@ -1,24 +1,33 @@
-# README
+Welcome to my test app!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+What it uses?
 
-Things you may want to cover:
+-Ruby on Rails
+-Bootstrap
+-Devise
+-Rspec
+-Factory girl
+-Rails admin
+-Faker
 
-* Ruby version
 
-* System dependencies
+How do I get set up?
 
-* Configuration
+You have to clone this repo and run bundle install to resolve dependencies using bundler
 
-* Database creation
 
-* Database initialization
+To sign in you can use my test data (or sign up) :
 
-* How to run the test suite
+-email : olenka@gmail.com
+-password : olenka
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+I also created fake data,so you have to run :
 
-* ...
+-rake db:migrate
+-rake db:seed
+
+
+And finally :
+
+-rails s
